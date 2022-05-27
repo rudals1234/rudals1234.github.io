@@ -3,54 +3,135 @@
 <head>
 <meta charset='utf-8'>
 <style>
+*{padding:0px; margin:0px;}
+body{background-image: url(img/sakura.webp); width: 2000px;}
+
+header,nav,section,aside,footer{
+	border:solid 0px red;
+}
+header {width:1900px; height:150px; margin-top: 10px;}
+
+h1{text-shadow:2px 2px 10px gray; font-weight:bold; border: dotted 0px blue; border-radius: 10px; 
+	width:290px; margin-left:800px; margin-top: 30px;}
+
+nav {width:1900px; height:40px; margin-top: 10px; border:dotted 0px pink; border-radius:20px; background-color: white;}
+
+section {width:1000px; height:400px; margin-top: 30px;
+float:left; margin-right: 29px;}
+
+aside {width:800px; height:400px; margin-top: 30px; float:left;}
+
+footer {width:1900px; height:200px; margin-top: 10px;}
+
+.clear{clear:both;}
+
+#logo,#top{border:solid opx blue;}
+
+#logo {float: left; margin-top:0px; margin-left: 875px;}
+
+#top{float:right; margin-top: 30px; margin-right: 30px;
+font-size: 20px; text-shadow: 2px 2px 10px gray; text-decoration: underline; border: dotted 0px blue; border-radius: 20px; background-color: white;}
+
+li{float: left; list-style-type: none; margin-left: 100px; 
+text-shadow: 2px 2px 10px gray; font-size: 20px; }
+
+#address{float:left; margin-top:0px; margin-left: 50px;}
+
+#customer{float:left; margin-top: 0px; margin-left: 260px;}
+
 table, th, tr, td {
 	border: solid 1px black;
 	border-collapse: collapse;
-	padding: 8px;
-}
+	padding: 9px; margin-left: 100px;}
+th{background-color: coral;}
+.a{background-color: aqua;}
+.a2{background-color: chartreuse;}
+h3{text-shadow:2px 2px 10px gray;}
+.b1{margin-top:10px; margin-left:50px;}
+.b2{margin-top:10px; margin-left:200px;}
+a:link { text-decoration: none;
+	color: black;}
+	a:visited { text-decoration: none;
+	color: white;}
+	a:hover { text-decoration: none;
+	color: yellow;}
+
 </style>
 </head>
 <body>
-<h3><a href="회원가입.html">2022년 1학기 시간표</a></h3>
-<a href="rubato.html">루바토 펜션 안내</a>
-<a href="행사 안내/행사 안내 페이지.html">행사 안내 페이지</a>
-<a href="ex_border.html">야간 개장 안내</a>
-<a href="ch03실습자료/반려동물 웹페이지.html">반려동물 웹페이지</a>
-<b><a href="ex1_bg-color.html">세일 안내장</a></b>
-<a href="test1.html">월간 일정표</a>
-<b><a href="shopping mall.html">쇼핑몰 판매 목록 </a></b>
-<table>
-	<tr>
-		<th>시간/요일</th> <th>월</th> <th>화</th> <th>수</th> <th>목</th> <th>금</th> <th>토</th>
-	</tr>
-	<tr>
-		<td>08:30~09:20</td> <td>X</td> <td>X</td> <td>X</td> <td>자기이해와 개발</td> <td>X</td> <td>마케팅의 이해</td>
-	</tr>
-	<tr>
-		<td>09:30~10:20</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
-	</tr>
-	<tr>
-		<td>10:30~11:20</td> <td>X</td> <td>마케팅의 이해</td> <td>X</td> <td>디지털콘텐츠비즈니스개론</td> <td>X</td> <td>웹프로그래밍</td>
-	</tr>
-	<tr>
-		<td>11:30~12:20</td> <td>X</td> <td>마케팅의 이해</td> <td>대학영어회화</td> <td>X</td> <td>X</td> <td>X</td>
-	</tr>
-	<tr>
-		<td>12:30~13:20</td> <td>X</td> <td>경영통계</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
-	</tr>
-	<tr>
-		<td>13:30~14:20</td> <td>X</td> <td>웹프로그래밍</td> <td>X</td> <td>디지털콘텐츠비즈니스개론</td> <td>X</td> <td>X</td>
-	</tr>
-	<tr>
-		<td>14:30~15:20</td> <td>X</td> <td>웹프로그래밍</td> <td>X</td> <td>디지털콘텐츠비즈니스개론</td> <td>X</td> <td>X</td>
-	</tr>
-	<tr>
-		<td>15:30~16:20</td> <td>X</td> <td>경영통계</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
-	</tr>
-	<tr>
-		<td>16:30~17:20</td> <td>X</td> <td>경영통계</td> <td>X</td> <td>X</td> <td>X</td> <td>대학영어회화</td>
-	</tr>
-</table>
+<header>
+	<h1>웹프 경민 홈페이지</h1>
+<div id="logo"></div>
+	<div id="top">
+		<a href="회원가입.html"><b>[로그인 | 회원가입 | 사이트 맵 | 회사소개]</b></a></div>
+	</header>
+<nav>
+<ul>
+	<li><b><a href="rubato.html">[루바토 펜션 안내]</a></b></li>
+	<li><b><a href="행사 안내/행사 안내 페이지.html">[행사 안내 페이지]</a></b></li>	
+	<li><b><a href="ex_border.html">[야간 개장 안내]</a></b></li>
+	<li><b><a href="ch03실습자료/반려동물 웹페이지.html">[반려동물 웹페이지]</a></b></li>
+	<li><b><a href="ex1_bg-color.html">[세일 안내장]</a></b></li>
+	<li><b><a href="test1.html">[월간 일정표]</a></b></li>
+	<li><b><a href="shopping mall.html">[쇼핑몰 판매 목록] </a></b></li>
+
+</ul>
+</nav>
+
+<section>
+	<table>
+		<tr>
+			<th>시간/요일</th> <th>월(공강)</th> <th>화</th> <th>수</th> <th>목</th> <th>금(공강)</th> <th>토</th>
+		</tr>
+		<tr>
+			<td class="a2">1교시/08:30~09:20</td> <td>X</td> <td>X</td> <td>X</td> <td class="a"><b>자기이해와 개발</b></td> <td>X</td> <td class="a"><b>마케팅의 이해</b></td>
+		</tr>
+		<tr>
+			<td class="a2">2교시/09:30~10:20</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
+		</tr>
+		<tr>
+			<td class="a2">3교시/10:30~11:20</td> <td>X</td> <td class="a"><b>마케팅의 이해</b></td> <td>X</td> <td class="a"><b>디지털콘텐츠비즈니스개론</b></td> <td>X</td> <td class="a"><b>웹프로그래밍</b></td>
+		</tr>
+		<tr>
+			<td class="a2">4교시/11:30~12:20</td> <td>X</td> <td class="a"><b>마케팅의 이해</b></td> <td class="a"><b>대학영어회화</b></td> <td>X</td> <td>X</td> <td>X</td>
+		</tr>
+		<tr>
+			<td class="a2">5교시/12:30~13:20</td> <td>X</td> <td class="a"><b>경영통계</b></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
+		</tr>
+		<tr>
+			<td class="a2">6교시/13:30~14:20</td> <td>X</td> <td class="a"><b>웹프로그래밍</b></td> <td>X</td> <td class="a"><b>디지털콘텐츠비즈니스개론</b></td> <td>X</td> <td>X</td>
+		</tr>
+		<tr>
+			<td class="a2">7교시/14:30~15:20</td> <td>X</td> <td class="a"><b>웹프로그래밍</b></td> <td>X</td> <td class="a"><b>디지털콘텐츠비즈니스개론</b></td> <td>X</td> <td>X</td>
+		</tr>
+		<tr>
+			<td class="a2">8교시/15:30~16:20</td> <td>X</td> <td class="a"><b>경영통계</b></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
+		</tr>
+		<tr>
+			<td class="a2">9교시/16:30~17:20</td> <td>X</td> <td class="a"><b>경영통계</b></td> <td>X</td> <td>X</td> <td>X</td> <td class="a"><b>대학영어회화</b></td>
+		</tr>
+	</table>
+</section>
+
+<aside>
+	<h3><b>[코로나가 풀리면 가고싶은 여행지 TOP5] [좋아하는 유튜브 채널] [맛집 검색 플랫폼 얌얌]</b></h3>
+	<a href="https://www.koreanair.com/kr/ko"><img src="img/비행기 이미지1.png" width="350" height="300"></a> 
+	<b1><a href="https://www.youtube.com/channel/UCDBAVzfX3yZ1hah0FHnOoaA"><img src="img/유튜브 로고.jpg" width="200" height="280"></a></b1>
+	<b2><a href="https://choihwoo.github.io/yumyum%20main.html"><img src="img/얌얌 로고.PNG" width="200" height="280"></a></b2>
+  	
+	
+</aside>
+
+<div class='clear'></div>
+<footer>
+	<div id="address">
+		<a href="https://portal.hoseo.edu/saml/Auth.do"><img src="img/하단 푸터 이미지1.PNG" width="1070px"></a>
+	</div>
+	<div id="customer">
+		<a href="https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com&locale=ko_KR&svctype=1"><img src="img/하단 푸터 이미지2.jpg" width="420px"></a>
+	</div>
+</footer>
+
 </body>
 </html>
 
